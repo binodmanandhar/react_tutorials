@@ -1,2 +1,2 @@
 # react_tutorials
-Learning reacts
+Learning react
