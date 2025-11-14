@@ -1,2 +1,2 @@
-# react_tutorials
+# React tutorials
 Learning react
