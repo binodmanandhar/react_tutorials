@@ -55,3 +55,11 @@ OR
 ```
 hs account auth
 ```
+
+
+* setup personal key
+* After copy paste of personal key check whether the account is in the list by using below command
+
+```
+hs accounts list
+```
