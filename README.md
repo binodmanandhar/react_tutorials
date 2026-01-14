@@ -42,3 +42,16 @@ hs version
 
 ### Authentication 
 Documentation : [Source](https://developers.hubspot.com/docs/developer-tooling/local-development/hubspot-cli/reference)
+
+Creates a config.yml file at the root of your home directory (i.e., ~/.hscli/config.yml), and sets up authentication for an account. 
+If you’re adding authentication for a new account to an existing config file, run the auth command. When prompted for a name to use for the account, the name can’t contain spaces.
+
+#### Based on global configuration for account management try below command
+
+```
+hs auth
+```
+OR
+```
+hs account auth
+```
