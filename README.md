@@ -25,15 +25,17 @@ Check versions:
 node -v
 npm -v
 git --version
+```
 
 ---
 
 ### Install HubSpot CLI
 
 Install the HubSpot CLI globally:
-```bash
+```sh
 npm install -g @hubspot/cli
-
+```
 Verify installation:
-```bash
+```sh
 hs version
+```
