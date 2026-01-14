@@ -27,7 +27,7 @@ npm -v
 git --version
 ```
 
----
+----
 
 ### Install HubSpot CLI
 
