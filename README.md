@@ -39,3 +39,5 @@ Verify installation:
 ```sh
 hs version
 ```
+
+### Authentication [Source] (https://developers.hubspot.com/docs/developer-tooling/local-development/hubspot-cli/reference)
