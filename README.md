@@ -57,9 +57,31 @@ hs account auth
 ```
 
 
-* setup personal key
-* After copy paste of personal key check whether the account is in the list by using below command
+* Setup personal key
+* Choose the HS portal
+* After copy paste of personal key in the terminal, check whether we can access the account by using below command line.
 
 ```
 hs accounts list
 ```
+----
+
+### Pulling theme into local directory
+
+First pull the theme from git into local
+```
+git clone github_repository
+```
+* Then cd to the project folder
+* The project folder should have README.md and theme_folder
+
+#### Example to pull theme templates
+```
+hs cms fetch --account=<protal_id> hubspot_theme_name/templates theme_folder/templates
+```
+
+#### Example to pull individual module
+```
+hs cms fetch --account=<protal_id> hubspot_theme_name/modules/info-card.module theme_folder/modules/info-card.module 
+```
+
