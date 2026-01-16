@@ -64,6 +64,13 @@ hs account auth
 ```
 hs accounts list
 ```
+
+
+### To use the account as default account
+
+```
+hs accounts use <accountNameorID>
+```
 ----
 
 ### Pulling theme into local directory
@@ -72,12 +79,18 @@ First pull the theme from git into local
 ```
 git clone github_repository
 ```
-* Then cd to the project folder
-* The project folder should have README.md and theme_folder
+
+### Go to the project directory
+```
+cd my-project
+```
+* The project folder should have README.md and my-theme-name
 
 #### Example to pull theme templates
 ```
-hs cms fetch --account=<protal_id> hubspot_theme_name/templates theme_folder/templates
+hs cms fetch --account=<protal_id> hubspot_theme_name/templates my-theme-name/templates
+is same as
+
 ```
 
 #### Example to pull individual module
@@ -85,3 +98,22 @@ hs cms fetch --account=<protal_id> hubspot_theme_name/templates theme_folder/tem
 hs cms fetch --account=<protal_id> hubspot_theme_name/modules/info-card.module theme_folder/modules/info-card.module 
 ```
 
+### Upload files
+Upload a new local asset to your HubSpot account. Changes uploaded through this command will be live immediately.
+
+```
+hs cms upload --account=<protal_id> <src> <dest>
+```
+
+### To pull the a single file from Design manager and overwrite is local
+```
+hs cms fetch --account=<protal_id> hubspot_theme_name/modules/info-card.module theme_folder/modules/info-card.module --overwrite
+```
+
+### Set a watch for automatic upload
+
+Watch your local directory and automatically upload changes to your HubSpot account on save. Any changes made when saving will be live immediately.
+
+```
+hs cms watch --account=<name> <src> <dest>
+```
